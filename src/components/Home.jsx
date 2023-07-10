@@ -15,7 +15,7 @@ import iceland from './assests/iceland.jpg';
       });
     };
 
-    const square_test = "justify-center w-screen h-screen bg-violet-500";
+    const square_test = "justify-center w-100 h-screen bg-violet-300";
     const logo_size = "w-10 h-10 inline-block";
     const cv_icon = "w-7 h-10 inline-block";
   
@@ -43,9 +43,9 @@ import iceland from './assests/iceland.jpg';
           </section> {/*End of section1*/}
           <section id="section2">
             <h1 className="flex justify-left text-center text-6xl text-black font-bold mb-4">About Me</h1>
-            <div className="flex justify-center items-center space-x-10"> 
+            <div className="flex justify-center items-center space-x-10 p-10"> 
               <img src={iceland} alt="Iceland" className="w-1/2 h-1/3" />
-              <h1 className="text-left text-3xl text-black font-bold mb-4">
+              <h1 className="text-left text-3xl text-black font-bold mb-4 max-w-sm">
                 UCSC Graduate with a major in Computer Science and a minor in Technology and Information Management.
                 <br />
                 <br />
