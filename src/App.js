@@ -6,6 +6,7 @@ import bunny from './components/bunny';
 import 'tailwindcss/tailwind.css';
 
 function App() {
+  
   return (
     <>
     <div className="App">
@@ -14,7 +15,7 @@ function App() {
         <br />
         <br />
         <Home/>
-        <bunny />
+        {bunny}
         <h1>Welcome to My App!</h1>
         <p>This is the content of my application.</p>
     </div>
