@@ -4,6 +4,8 @@ import linkedin from './icons/LinkedinIcon.png';
 import github from './icons/github.png';
 import cv from './icons/CV icon.png';
 import iceland from './assests/iceland.jpg';
+import React from 'react';
+import 'tailwindcss/tailwind.css';
 
   const Home = () => {
     const scrollToSection = (sectionId) => {
