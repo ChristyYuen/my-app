@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 
@@ -26,8 +27,18 @@ describe('Home component', () => {
 
 });
 
+test('navbar shows a border on hover', () => {
+  render(
+    <BrowserRouter>
+      <NavBar />
+    </BrowserRouter>
+  );
+});
+
 test('renders the NavBar component', () => {
   render(<NavBar />);
+
+
 
   // checking logo 
   const logoElement = screen.getByText(/Logo/i);
@@ -53,4 +64,3 @@ test('renders the NavBar component', () => {
   const contactLinkElement = screen.getByText(/Contact/i);
   expect(contactLinkElement).toBeInTheDocument();
 });
-

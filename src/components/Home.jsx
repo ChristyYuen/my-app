@@ -11,13 +11,13 @@ import iceland from './assests/iceland.jpg';
         duration: 500,
         delay: 100,
         smooth: true,
-        offset: -70,
+        offset: 20,
       });
     };
 
     const square_test = "justify-center w-100 h-screen bg-violet-300";
     const logo_size = "w-10 h-10 inline-block";
-    const cv_icon = "w-7 h-10 inline-block";
+    const cv_icon = "w-7 h-15 inline-block";
   
     return (
       <div>
@@ -28,7 +28,7 @@ import iceland from './assests/iceland.jpg';
                 <br />
                 Software Engineer
                 <br />
-                <div className="flex items-center justify-center h-20 ml-10 space-x-20">
+                <div className="flex items-center justify-center h-20 ml-10 space-x-10">
                 <img src={linkedin} alt="Link to my LinkedIn" className={logo_size} /> 
                 <img src={github} alt="Link to my GitHub" className={logo_size}/> 
                 <img src={cv} alt="Link to my Resume" className={cv_icon}/>
@@ -43,17 +43,20 @@ import iceland from './assests/iceland.jpg';
           </section> {/*End of section1*/}
           <section id="section2">
             <h1 className="flex justify-left text-center text-6xl text-black font-bold mb-4">About Me</h1>
-            <div className="flex justify-center items-center space-x-10 p-10"> 
+            <div className="flex justify-center items-center space-x-10 p-1"> 
               <img src={iceland} alt="Iceland" className="w-1/2 h-1/3" />
-              <h1 className="text-left text-3xl text-black font-bold mb-4 max-w-sm">
-                UCSC Graduate with a major in Computer Science and a minor in Technology and Information Management.
-                <br />
-                <br />
-                Goal: 
-                <br />
-                Unleashing Innovation Through Code: Empowering Business Success with Proficiency, Passion, and Excellence. 
-                <br />
-                </h1>
+                <h1 className="text-left text-3xl text-black font-bold mb-4 max-w-md">
+                  UCSC Graduate
+                  <br />
+                  <h1 className="text-2xl"> Major in Computer Science</h1>
+                  <h1 className="text-2xl"> Minor in Technology and Information Management </h1>
+                  <br />
+                  <br />
+                  Goal: 
+                  <br />
+                  Unleashing Innovation Through Code: Empowering Business Success with Proficiency, Passion, and Excellence. 
+                  <br />
+                  </h1>
             </div>
             <p>Bloop bloop bloop</p>
             <div className={square_test}></div>
