@@ -25,7 +25,7 @@ function NavBar() {
                   offset={-70}
                   duration={200}
                   className={highlight}>
-                  About
+                  About Me
                   </Link>
                   {/*Contact*/}<a href="/contact" className={highlight}>Contact</a>
                 
